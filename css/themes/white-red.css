@@ -1,15 +1,17 @@
 /* Theme */
 
 main {
-	background: url(https://i.imgur.com/IdXTAaE.gif) no-repeat center center fixed;
-	background-size: cover;
-	color: #AF3D4E;
+  /*background: url("../../Images/squirtle.gif") no-repeat center center fixed;
+	background-size: cover;*/
+  background-color: aliceblue;
+  color: #724998;
+  /* color: #AF3D4E; */
 }
 
 .icons-social a {
-	color: #AF3D4E;
+  color: #af3d4e;
 }
 
 .icons-social a svg path {
-	fill: #AF3D4E;
+  fill: #af3d4e;
 }

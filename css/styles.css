@@ -45,14 +45,18 @@ main {
 
 main>.intro {
 	font-family: 'Reem Kufi', sans-serif;
-	font-size: 3.75em;
+	font-size: 4em;
 	font-weight: 600;
 }
 
 main>.tagline {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	margin: 1.5rem 0;
 	font-weight: 100;
+}
+
+main>.about {
+    font-size: 1.5rem;
 }
 
 .icons-social i {
@@ -83,6 +87,22 @@ main>.tagline {
 	background-size: 4px 50px;
 }
 
+#me {
+	background:
+		linear-gradient(to bottom, var(--mainColor) 0%,
+		var(--mainColor) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 4px 4px;
+	color: #000;
+	text-decoration: none;
+	transition: background-size .2s;
+}
+
+#me:hover {
+	background-size: 4px 200px;
+}
+
 .devto {
 	margin-bottom: -0.20rem;
 }
@@ -93,4 +113,11 @@ main>.tagline {
 	;
 	width: 2.65rem;
 	height: 2.65rem;
+}
+
+footer {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	background-color: #724998;
+	font-size: 1rem;
 }
