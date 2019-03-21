@@ -26,8 +26,15 @@
     <!-- <link rel="stylesheet" href="css/themes/white-indigo.css"> -->
     <!-- <link rel="stylesheet" href="css/themes/white-blue.css"> -->
     <!-- <link rel="stylesheet" href="css/themes/white-grey.css"> -->
-    <link rel="stylesheet" href="css/themes/white-red.css" />
+    <link rel="stylesheet" href="css/themes/white-red.css" title="nogif" />
+    <link
+      rel="alternate stylesheet"
+      type="text/css"
+      href="css/gifbg.css"
+      title="withgif"
+    />
     <!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
+    <script type="text/javascript" src="scripts/script.js"></script>
   </head>
 
   <body>
@@ -98,6 +105,26 @@
         <a target="_blank" href="https://codepen.io/mafro/"
           ><i class="fab fa-codepen"></i
         ></a>
+      </div>
+      <div>
+        <button
+          type="button"
+          onclick="switch_style('nogif');return false;"
+          name="theme"
+          value="Nogif Theme"
+          id="nogif"
+        >
+          No background GIF
+        </button>
+        <button
+          type="button"
+          onclick="switch_style('withgif');return false;"
+          name="theme"
+          value="GIF Theme"
+          id="withgif"
+        >
+          <img src="images/buttonsmall.png" />
+        </button>
       </div>
     </main>
     <footer><strong>&copy; 2019 Matthew Francis</strong></footer>
