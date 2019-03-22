@@ -1,5 +1,5 @@
 // *** TO BE CUSTOMISED ***
-
+console.log("Working?");
 var style_cookie_name = "style";
 var style_cookie_duration = 30;
 var style_domain = "thesitewizard.com";
