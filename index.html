@@ -1,141 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
 
-    <title>Matthew Francis | Web Dev Student</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/455b2cf655.js" crossorigin="anonymous"></script>
 
-    <link rel="icon" href="favicon.ico" type="image/png" />
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Portfolio</label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Portfolio</a></li>
+        </ul>
+    </nav>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300"
-      rel="stylesheet"
-    />
-    <link
-      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <!--<link rel="stylesheet" href="css/themes/indigo-white.css" /> -->
-    <!-- <link rel="stylesheet" href="css/themes/green-white.css"> -->
-    <!--<link rel="stylesheet" href="css/themes/red-white.css" />-->
-    <!-- <link rel="stylesheet" href="css/themes/grey-white.css"> -->
-    <!-- <link rel="stylesheet" href="css/themes/white-indigo.css"> -->
-    <!-- <link rel="stylesheet" href="css/themes/white-blue.css"> -->
-    <!-- <link rel="stylesheet" href="css/themes/white-grey.css"> -->
-    <link rel="stylesheet" href="css/themes/white-red.css" title="nogif" />
-    <link
-      rel="alternate stylesheet"
-      type="text/css"
-      href="css/gifbg.css"
-      title="withgif"
-    />
-    <!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
-    <script type="text/javascript" src="scripts/script.js"></script>
-  </head>
-
-  <body>
     <main>
-      <div class="profilepic">
-        <img src="Images/profilesmall.png" alt="Photo of me" />
-      </div>
-      <div class="intro">
-        Hello, I'm
-        <a id="me" href="https://twitter.com/themafro" target="_blank"
-          >Matthew!</a
-        >
-      </div>
-
-      <div class="tagline">
-        <strong>Web Dev Student | HTML,CSS &amp; Javascript | UI Design</strong>
-      </div>
-      <div class="about">
-        <p>
-          <strong>
-            I'm currently a student in the NC Level 6 Web &amp; Mobile Application
-            Development course at
-            <a id="links" href="https://www.fife.ac.uk" target="_blank"
-              >Fife College</a
-            >. So far I have created three websites. The <a id="links" href="https://studentnet.fife.ac.uk/~1880611/climatechange1/" target="_blank">first</a> one was an educational website about the effects computers have on climate change. For this, I created a single-column responsive site using the Flexbox CSS layout model. 
-            <br><br>
-            The <a id="links" href="https://studentnet.fife.ac.uk/~1880611/sunshinepark/" target="_blank">second</a> site I created was a multi-page infromation site for the fictional Sunshine Farm Park. This site taught me how to use the Bootstrap frontend framework which helped make the site responsive and added interactive elements such as an auto-scrolling image carousel. Here I also learnd how to do form layouts and embed interactive iframes.
-            <br><br>
-            The <a id="links" href="https://studentnet.fife.ac.uk/~1880611/maximizedcomics/" target="blank">third</a> site was a brief to redesign Maximized Comics, the website for my tutor Colin Maxwell. The requrement was for the design to be focused on the mobile web so I again used the Bootstrap framework here for easy responsiveness.
-            <br><br>
-
-            I have always been passionate about the internet and
-            technology and previously used online resources such as Codecademy
-            and freeCodeCamp to teach myself the fundamentals of web development. I have previosuly completed an HND in Art & Design at Fife College (back when it was Adam Smith College) and I've been able to apply skills I learned from that to many aspects of this course such as designing wireframes and prototypes as well as user interface and layout design.
-            <br><br>
-            I currently work part time
-            in retail and I applied for this course because I am interested in
-            pursuing a career in web development.
-            I am really enjoying the course so far and hope to continue on this leanring path through the HND and
-            progress onto the degree.
-            <br><br>
-
-            For this website I decided to create a simple single page responsive layout to introduce myself and show some of the skills I've learned from doing my courswork so far. I tried out some new techniques here like creating a simple animation when hovering over links and changing the colour of Font Awesome icons on hover. I also used CSS variables which I haven't been taught in class yet. The most complicated part was coding the switching back and forward between two stylesheets and this was achieved using javascript and the two buttons at the bottom of the page. I uploaded this site to Github using Git and it's hosted on Github Pages using a custom domain.
-            <br><br>
-            Below are some links including my social media, GitHub and CodePen.
-            </strong
-          >
-        </p>
-      </div>
-      <br>
-      <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
-      <div class="icons-social">
-        <a target="_blank" href="https://studentnet.fife.ac.uk/~1880611/"
-          ><i class="fas fab fa-link"></i
-        ></a>
-        <a target="_blank" href="https://github.com/mafro28"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a target="_blank" href="https://twitter.com/themafro"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a target="_blank" href="https://www.instagram.com/mafro/"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a target="_blank" href="https://dev.to/themafro"
-          ><i class="fab fa-dev"></i
-        ></a>
-        <a target="_blank" href="https://www.linkedin.com"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a target="_blank" href="https://medium.com/@mafro"
-          ><i class="fab fa-medium"></i
-        ></a>
-        <a target="_blank" href="https://www.freecodecamp.org/mafro28"
-          ><i class="fab fa-free-code-camp"></i
-        ></a>
-        <a target="_blank" href="https://codepen.io/mafro/"
-          ><i class="fab fa-codepen"></i
-        ></a>
-      </div>
-      <div>
-        <button
-          type="button"
-          onclick="switch_style('nogif');return false;"
-          name="theme"
-          value="Nogif Theme"
-          id="nogif"
-        >
-          Click the Squirtle head for a SURPRISE (and here again to switch back).
-        </button>
-        <button
-          type="button"
-          onclick="switch_style('withgif');return false;"
-          name="theme"
-          value="GIF Theme"
-          id="withgif"
-        >
-          <img class="squirtlebutton" src="https://i.imgur.com/kepNkfe.png" />
-        </button>
-      </div>
+        <h1>I'm Matthew</h1>
+        <br>
+        <br>
+        <h2>I’m studying BSc(Hons) Web Design & Development at Edinburgh Napier University.</h2>
+        <br>
+        <br>
+        <h3>I have a passion for minimalistic user interfaces and clean designs.</h3>
+        <br>
+        <br>
+        <h3>You can see my <a class="link" href="https://github.com/mafro28?tab=repositories"
+                target="_blank">Github</a> here,
+            and find me on <a class="link" href="https://twitter.com/themafro" target="_blank">Twitter</a>, <a
+                class="link" href="https://www.instagram.com/mafro/">Instagram</a> or <a class="link"
+                href="https://www.linkedin.com/in/matthewfrancis/">LinkedIn</a>.</h3>
     </main>
-    <footer><strong>&copy; 2019 Matthew Francis</strong></footer>
-  </body>
+
+
+    <footer>&copy; 2022 Matthew Francis </footer>
+</body>
+
 </html>
